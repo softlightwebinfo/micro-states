@@ -11,7 +11,7 @@ import (
 )
 
 func getAll(c *gin.Context) {
-	row, err := settings.DB.Query("SELECT id, iso, name FROM countries ORDER BY name asc")
+	row, err := settings.DB.Query("SELECT id, iso, name FROM countries WHERE id=73 ORDER BY name asc")
 
 	countries := Countries{}
 
